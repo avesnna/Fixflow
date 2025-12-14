@@ -1,0 +1,23 @@
+.about {
+    background: #fff;
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.05);
+    margin-top: -3rem;
+  }
+  
+  .about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+
+  

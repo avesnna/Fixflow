@@ -1,0 +1,479 @@
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 22px 26px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background-color: var(--light-bg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-icon {
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(43,121,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon i {
+    margin: 0;
+    font-size: 36px;
+    color: var(--blue);
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-header-row {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.project-header-row h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-type {
+    background: rgba(43,121,255,0.15);
+    color: var(--blue);
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor:default;
+}
+
+.project-details-row {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.project-buttons-row {
+    display: flex;
+    gap: 12px;
+}
+
+.project-btn {
+   display: flex;
+   flex-direction: row;
+   background-color: var(--blue);
+   color: white;
+   font-size:1.5vw;
+   border-radius: 14px;
+   align-items: center;
+   justify-content: center;
+   gap: 1vw;
+   padding: 12px;
+   font-weight: 600;
+   transition: all 0.3s ease;
+}
+
+.project-btn i {
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.project-btn.blue {
+    background: var(--blue);
+    color: #fff;
+}
+
+.project-btn.blue:hover {
+    background: #1d63db;
+}
+
+.project-btn.red {
+    background: rgb(255, 75, 75, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.project-btn.red:hover {
+    background: rgb(255, 75, 75);
+    transform: scale(1.05);
+}
+
+.project-btn.green {
+    background: rgb(60, 207, 126,0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;  
+}
+
+.project-btn.green:hover {
+    background:rgb(60, 207, 126);
+    transform: scale(1.05);
+}
+
+.breadcrumbs {
+    padding: 15px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.breadcrumbs .container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs a {
+    color: #2f66ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    opacity: 0.6;
+}
+
+.breadcrumbs .current {
+    font-weight: 600;
+    opacity: 1;
+}
+
+.project-status-form {
+    margin: 0;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-card-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 15px;
+    appearance:unset;
+    background: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.action-btn i{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+.action-btn.edit i {
+    color: #2b7efc;
+}
+
+.action-btn.delete i {
+    color: #d9534f;
+}
+
+.action-btn i:hover {
+    font-size: 1.8rem;
+}
+
+.project-card-actions form {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-content {
+        align-items: center;
+    }
+
+    .project-header-row {
+        align-items: center;
+    }
+
+    .project-details-row {
+        justify-content: center;
+    }
+
+    .project-buttons-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-btn {
+        width: 100%;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .project-btn i {
+        font-size: 16px;
+    }
+
+    .project-icon {
+        min-width: 90px;
+        height: 90px;
+    }
+
+    .project-icon i {
+        font-size: 40px;
+    }
+    .info-header {
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 200px;
+        align-items: start;
+        text-align: start;
+    }
+    .room-edit-row {
+        flex-direction: column;
+    }
+    .delete button {
+        width: 60vw;
+    }
+
+}
+
+/*--------------------------------------ПРОЕКТ---ОДИН----------------------------------------*/
+
+.project-card.multi {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+}
+
+.info-header h2,
+.info-header h2 i {
+    font-size: 20px;
+    margin: 0;
+    color: var(--blue);
+}
+.project-info-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.project-info-grid p {
+    margin: 0;
+}
+
+.add-btn {
+    background: rgba(43, 121, 255, 0.15);
+    color: var(--blue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.add-btn i,
+.room-card-one i {
+    margin: 0;
+    font-size: 20px;
+}
+
+.add-btn:hover {
+    background: var(--blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.room-form-box,
+.task-form-box {
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    animation: fadeIn 0.3s ease;
+}
+
+.room-form-box input,
+.inputs input,
+.task-form-box input,
+.task-form-box textarea,
+.task-form-box select,
+.inputs textarea,
+.inputs select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: Montserrat;
+}
+
+.rooms-list,
+.actions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.room-card,
+.action-card {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    padding: 10px 15px;
+    align-items: start;
+}
+
+.room-card-one h3 {
+    color: var(--blue);
+    margin-left: 5px;
+}
+
+.room-card-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--blue);  
+}
+
+.room-card-one span {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    font-size: medium;
+
+}
+
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.inputs-main {
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.action-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    text-align: start;
+}
+
+.action-header h3 {
+    color: var(--blue);
+}
+
+.action-header p {
+    color: black;
+    opacity: 0.5;
+}
+
+.task-status {
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor:default;
+}
+
+.task-status.в-процессе {
+    background: rgba(255, 237, 43, 0.572);
+    color: rgb(255, 132, 0);
+}
+
+.task-status.выполнено {
+    background: rgba(128, 255, 43, 0.572);
+    color: green;
+}
+
+.task-status.запланировано {
+    background: rgba(43,121,255,0.15);
+    color: var(--blue);
+}
+
+.progress-bar.small {
+    width: 100%;
+    height: 10px;
+    background: #e6e6e6;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 6px;
+}
+
+.progress.blue {
+    background: #4aa8ff;
+}
+
+.progress.yellow {
+    background: #ffd34a;
+}
+
+.progress.green {
+    background: #4ac06d;
+}

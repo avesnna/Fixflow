@@ -1,0 +1,26 @@
+ 
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+  }
+
+  .map {
+    padding: 4rem 1rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .map-frame {
+    margin-top: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info, .contact-form, .map {
+      padding: 3rem 1rem;
+    }
+  }
+  

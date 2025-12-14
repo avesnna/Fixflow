@@ -1,0 +1,38 @@
+  .features {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--light-bg);
+  }
+  
+  .feature {
+    background: #fff;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    padding: 2rem 2.5rem;
+    margin: 1.2rem auto;
+    max-width: 720px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    color: var(--blue);
+    cursor: pointer;
+  }
+  
+  .feature i {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    color: var(--blue);
+  }
+  
+  .feature:hover {
+    color: white;
+    background-color: var(--blue);
+    transform: translateY(-4px);
+  }
+  
+  .feature:hover h3 {
+    color: white;
+  }
+  

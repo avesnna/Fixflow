@@ -1,0 +1,125 @@
+
+.project-form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.project-form-card h2 {
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.project-form label {
+    margin-top: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.project-form input,
+.project-form select {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    font-size: 15px;
+    background: #fafafa;
+}
+
+.project-submit-btn {
+    gap: 10px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.project-type-select {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.type-option {
+    flex: 1;
+    padding: 14px 10px;
+    background: #f3f6ff;
+    border: 2px solid #d8e3ff;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: 600;
+    color: #3a4b7a;
+    user-select: none;
+    cursor: pointer;
+}
+
+.type-option i {
+    font-size: 22px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.type-option.active,
+.type-option:hover {
+    background: #2f66ff;
+    border-color: #2f66ff;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(47,102,255,0.35);
+}
+
+.budget-mode-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    color: var(--blue);
+    margin: 10px;
+}
+
+.budget-fields input[disabled] {
+    background: #eee;
+    opacity: 0.7;
+}
+.styled-checkbox {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--blue);
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fff;
+    position: relative;
+    transition: 0.25s;
+}
+
+.styled-checkbox:checked {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.styled-checkbox:checked::after {
+    content: "\f00c"; /* галочка */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
